@@ -8,7 +8,7 @@ import time
 
 
 name = str(sys.argv[1])
-samplename = name.split('.')[0]
+samplename = os.path.splitext(os.path.basename(name))[0]
 mname = f'{samplename}_filter.sam'
 folder_path = sys.argv[2]
 
